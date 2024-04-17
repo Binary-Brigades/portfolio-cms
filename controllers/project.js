@@ -99,7 +99,9 @@ exports.updateProject = async (req, res) => {
     if (!updatedProject) {
       return res.status(404).json({ error: "Project not found" });
     }
-    res.json(updatedProject);
+    res
+      .status(200)
+      .json({ message: "Project updated successfully", updatedProject });
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: "Internal server error" });

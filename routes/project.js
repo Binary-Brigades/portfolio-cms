@@ -9,7 +9,7 @@ const {
 } = require("../controllers/project");
 
 // Project routes
-projectRouter.get("/project/getall", getAllUserProjects);
+projectRouter.get("/project/getall", verifyAccessToken, getAllUserProjects);
 projectRouter.get("/project/:id", getProjectById);
 
 projectRouter.post("/project", verifyAccessToken, createProject);

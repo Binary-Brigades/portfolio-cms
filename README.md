@@ -19,7 +19,7 @@
    mongoDbUrl = [mongodburl]
    mongoDbName = [name of the database]
    AccessTokenSecretKey = [random string ]
-   AccessTokenExpires = 0 
+   AccessTokenExpires = 0
    ```
 
 ## Registration
@@ -110,3 +110,179 @@
    "email": "mainamaich@gmail.com",
 ```
 
+## projects
+
+### get all user projects
+
+> **request**
+
+- url: amredi-backend.vercel.app/api/v1/project/getall
+- method: GET
+
+* request headers(token):
+  ```
+  authorization:`Bearer token`
+  ```
+
+> **response**
+
+- status code: `200`
+- response body:
+
+```json
+[
+  {
+    "title": "",
+    "description": "",
+    "createdBy": "",
+    "duration": "",
+    "githublink": "",
+    "livelink": "",
+    "time": "",
+    "tabs": [],
+    "imageUrls": []
+  }
+]
+```
+
+### get project byid
+
+> **request**
+
+- url: amredi-backend.vercel.app/api/v1/project/:id
+- method: GET
+
+> **response**
+
+- status code: `200`
+- response body:
+
+```json
+{
+  "title": "",
+  "description": "",
+  "createdBy": "",
+  "duration": "",
+  "githublink": "",
+  "livelink": "",
+  "time": "",
+  "tabs": [],
+  "imageUrls": []
+}
+```
+
+### create a projects
+
+> **request**
+
+- url: amredi-backend.vercel.app/api/v1/project
+- method: POST
+
+* request headers(token):
+  ```bash
+  authorization:`Bearer token`
+  ```
+* request body:
+
+```json
+{
+  "title": "",
+  "description": "",
+  "createdBy": "",
+  "duration": "",
+  "githublink": "",
+  "livelink": "",
+  "time": "",
+  "tabs": [],
+  "imageUrls": []
+}
+```
+
+> **response**
+
+- status code: `201`
+- message :"project created successfully"
+- response body:
+
+```json
+{
+  "title": "",
+  "description": "",
+  "createdBy": "",
+  "duration": "",
+  "githublink": "",
+  "livelink": "",
+  "time": "",
+  "tabs": [],
+  "imageUrls": []
+}
+```
+
+### update a projects
+
+> **request**
+
+- url: amredi-backend.vercel.app/api/v1/project/:id
+- method: PUT
+
+* request headers(token):
+  ```
+  authorization:`Bearer token`
+  ```
+* request body:
+
+```json
+{
+  "title": "",
+  "description": "",
+  "createdBy": "",
+  "duration": "",
+  "githublink": "",
+  "livelink": "",
+  "time": "",
+  "tabs": [],
+  "imageUrls": []
+}
+```
+
+> **response**
+
+- status code: `200`
+- message :"Project updated successfully"
+- response body:
+
+```json
+{
+  "title": "",
+  "description": "",
+  "createdBy": "",
+  "duration": "",
+  "githublink": "",
+  "livelink": "",
+  "time": "",
+  "tabs": [],
+  "imageUrls": []
+}
+```
+
+### delete a projects
+
+> **request**
+
+- url: amredi-backend.vercel.app/api/v1/project/:id
+- method: DELETE
+
+* request headers(token):
+  ```
+  authorization:`Bearer token`
+  ```
+
+> **response**
+
+- status code: `200`
+- message :"Project deleted successfully"
+- response body:
+
+```
+
+```
