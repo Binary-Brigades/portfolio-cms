@@ -2,7 +2,7 @@
 
 # Portfoliocms-Backend
 
-<p> The backend api for the InnerGlow web application </p>
+<p> This is a portfolio CMS backened for dynamic portfolio project update </p>
 </div>
 
 ## Getting started
@@ -20,13 +20,17 @@
    mongoDbName = [name of the database]
    AccessTokenSecretKey = [random string ]
    AccessTokenExpires = 0
+   CLOUDINARY_CLOUD_NAME=
+   CLOUDINARY_API_KEY=
+   CLOUDINARY_API_SECRET=
+   CLOUDINARY_URL=
    ```
 
 ## Registration
 
 > **request**
 
-- url: amredi-backend.vercel.app/api/v1/auth/register
+- url: https://portfolio-cms-nine.vercel.app/api/v1/auth/register
 - method: POST
 - example of a request body:
   ```json
@@ -51,7 +55,7 @@
 
 > **request**
 
-- url: amredi-backend.vercel.app/api/v1/auth/login
+- url: https://portfolio-cms-nine.vercel.app/api/v1/auth/login
 - method: POST
 - request body:
   ```json
@@ -71,7 +75,7 @@
 
 > **request**
 
-- url: amredi-backend.vercel.app/api/v1/user/profile
+- url: https://portfolio-cms-nine.vercel.app/api/v1/user/profile
 - method: GET
 
 > **response**
@@ -88,7 +92,7 @@
 
 > **request**
 
-- url: amredi-backend.vercel.app/api/v1/user/edit-profile
+- url: https://portfolio-cms-nine.vercel.app/api/v1/user/edit-profile
 - method: POST
 
 * request body:
@@ -116,7 +120,7 @@
 
 > **request**
 
-- url: amredi-backend.vercel.app/api/v1/project/getall
+- url: https://portfolio-cms-nine.vercel.app/api/v1/project/getall
 - method: GET
 
 * request headers(token):
@@ -149,7 +153,7 @@
 
 > **request**
 
-- url: amredi-backend.vercel.app/api/v1/project/:id
+- url: https://portfolio-cms-nine.vercel.app/api/v1/project/:id
 - method: GET
 
 > **response**
@@ -175,7 +179,7 @@
 
 > **request**
 
-- url: amredi-backend.vercel.app/api/v1/project
+- url: https://portfolio-cms-nine.vercel.app/api/v1/project
 - method: POST
 
 * request headers(token):
@@ -222,7 +226,7 @@
 
 > **request**
 
-- url: amredi-backend.vercel.app/api/v1/project/:id
+- url: https://portfolio-cms-nine.vercel.app/api/v1/project/:id
 - method: PUT
 
 * request headers(token):
@@ -269,7 +273,7 @@
 
 > **request**
 
-- url: amredi-backend.vercel.app/api/v1/project/:id
+- url: https://portfolio-cms-nine.vercel.app/api/v1/project/:id
 - method: DELETE
 
 * request headers(token):
@@ -282,7 +286,3 @@
 - status code: `200`
 - message :"Project deleted successfully"
 - response body:
-
-```
-
-```
