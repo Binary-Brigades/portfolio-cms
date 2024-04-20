@@ -28,12 +28,12 @@
    CLOUDINARY_URL=
    ```
 
-## Registration
+<!-- ## Registration -->
 
-> **request**
+<!-- > **request** -->
 
-- url: https://portfolio-cms-nine.vercel.app/api/v1/auth/register
-- method: POST
+<!-- - url: https://portfolio-cms-nine.vercel.app/api/v1/auth/register -->
+<!-- - method: POST
 - example of a request body:
   ```json
   {
@@ -45,13 +45,13 @@
   ```
   > **response**
 
-* status code: `201` if success else `400`
-* response body:
+ <!-- * status code: `201` if success else `400` -->
+<!-- * response body:  -->
 
-```json
+<!-- ```json
    "status": "success",
    "message": "user registerd successfully",
-```
+``` -->
 
 ## Login
 
