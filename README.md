@@ -5,6 +5,8 @@
 <p> This is a portfolio CMS backened for dynamic portfolio project update </p>
 </div>
 
+![alt text](utils/assets/cms.png)
+
 ## Getting started
 
 1. clone the respository
