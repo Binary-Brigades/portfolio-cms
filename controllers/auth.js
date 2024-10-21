@@ -57,6 +57,7 @@ exports.login = async (req, res, next) => {
       access_token: token,
     });
   } catch (error) {
+    console.error(error)
     next(error);
   }
 };
